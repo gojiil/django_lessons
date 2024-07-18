@@ -20,3 +20,37 @@ INFO 2024-07-14 09:44:48,433 autoreload 151464 139774019409728 Watching for file
 INFO 2024-07-14 09:45:01,270 basehttp 151464 139773735864000 "GET / HTTP/1.1" 200 305
 WARNING 2024-07-14 09:45:01,310 log 151464 139773735864000 Not Found: /favicon.ico
 INFO 2024-07-14 09:45:07,371 basehttp 151464 139773735864000 "GET /about HTTP/1.1" 200 331
+INFO 2024-07-18 14:14:11,535 autoreload 79946 140522981721920 Watching for file changes with StatReloader
+WARNING 2024-07-18 14:14:23,750 log 79946 140522698049216 Not Found: /
+WARNING 2024-07-18 14:14:23,750 basehttp 79946 140522698049216 "GET / HTTP/1.1" 404 2278
+WARNING 2024-07-18 14:14:23,800 log 79946 140522698049216 Not Found: /favicon.ico
+WARNING 2024-07-18 14:14:23,801 basehttp 79946 140522698049216 "GET /favicon.ico HTTP/1.1" 404 2329
+INFO 2024-07-18 14:14:37,606 basehttp 79946 140522698049216 "GET /lesson3/hello HTTP/1.1" 200 20
+INFO 2024-07-18 14:14:42,224 basehttp 79946 140522698049216 "GET /lesson3/helloview HTTP/1.1" 200 17
+INFO 2024-07-18 15:20:55,848 autoreload 82720 140218355398464 Watching for file changes with StatReloader
+WARNING 2024-07-18 15:21:05,265 log 82720 140217996543680 Not Found: /
+WARNING 2024-07-18 15:21:05,265 basehttp 82720 140217996543680 "GET / HTTP/1.1" 404 2278
+ERROR 2024-07-18 15:21:11,635 log 82720 140217996543680 Internal Server Error: /lesson3/
+Traceback (most recent call last):
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson3/views.py", line 26, in my_view
+    return render(request, "lesson3/index.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: lesson3/index.html
+ERROR 2024-07-18 15:21:11,635 basehttp 82720 140217996543680 "GET /lesson3/ HTTP/1.1" 500 85532
+INFO 2024-07-18 15:22:19,655 autoreload 82720 140218355398464 /home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson3/views.py changed, reloading.
+INFO 2024-07-18 15:22:19,847 autoreload 82958 140367442233152 Watching for file changes with StatReloader
+INFO 2024-07-18 15:22:22,653 basehttp 82958 140367156479680 "GET /lesson3/ HTTP/1.1" 200 226

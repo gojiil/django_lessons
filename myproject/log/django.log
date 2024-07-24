@@ -54,3 +54,285 @@ ERROR 2024-07-18 15:21:11,635 basehttp 82720 140217996543680 "GET /lesson3/ HTTP
 INFO 2024-07-18 15:22:19,655 autoreload 82720 140218355398464 /home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson3/views.py changed, reloading.
 INFO 2024-07-18 15:22:19,847 autoreload 82958 140367442233152 Watching for file changes with StatReloader
 INFO 2024-07-18 15:22:22,653 basehttp 82958 140367156479680 "GET /lesson3/ HTTP/1.1" 200 226
+INFO 2024-07-24 16:49:39,870 autoreload 86354 139750000330560 Watching for file changes with StatReloader
+INFO 2024-07-24 16:51:11,065 autoreload 86535 140399239329600 Watching for file changes with StatReloader
+INFO 2024-07-24 16:51:52,447 autoreload 86659 139854111418176 Watching for file changes with StatReloader
+ERROR 2024-07-24 16:52:07,335 log 86659 139853826098880 Internal Server Error: /lesson4/client/add/
+Traceback (most recent call last):
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson4/views.py", line 21, in client_form
+    return render(request, 'form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-07-24 16:52:07,337 basehttp 86659 139853826098880 "GET /lesson4/client/add/ HTTP/1.1" 500 134097
+WARNING 2024-07-24 16:52:07,393 log 86659 139853826098880 Not Found: /favicon.ico
+WARNING 2024-07-24 16:52:07,393 basehttp 86659 139853826098880 "GET /favicon.ico HTTP/1.1" 404 2437
+INFO 2024-07-24 16:53:48,449 autoreload 86981 140513636472640 Watching for file changes with StatReloader
+ERROR 2024-07-24 16:53:59,037 log 86981 140513275545280 Internal Server Error: /lesson4/client/add/
+Traceback (most recent call last):
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson4/views.py", line 21, in client_form
+    return render(request, 'lesson4/base_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-07-24 16:53:59,038 basehttp 86981 140513275545280 "GET /lesson4/client/add/ HTTP/1.1" 500 134227
+INFO 2024-07-24 16:57:16,741 autoreload 87400 140266500687680 Watching for file changes with StatReloader
+ERROR 2024-07-24 16:57:27,561 log 87400 140266224748224 Internal Server Error: /lesson4/client/add/
+Traceback (most recent call last):
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson4/views.py", line 21, in client_form
+    return render(request, 'lesson4/base_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-07-24 16:57:27,562 basehttp 87400 140266224748224 "GET /lesson4/client/add/ HTTP/1.1" 500 134227
+INFO 2024-07-24 16:59:36,606 autoreload 87700 139900276102976 Watching for file changes with StatReloader
+INFO 2024-07-24 16:59:48,483 basehttp 87700 139899990705856 "GET /lesson4/client/add HTTP/1.1" 301 0
+ERROR 2024-07-24 16:59:48,527 log 87700 139899990705856 Internal Server Error: /lesson4/client/add/
+Traceback (most recent call last):
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson4/views.py", line 21, in client_form
+    return render(request, 'base_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-07-24 16:59:48,529 basehttp 87700 139899990705856 "GET /lesson4/client/add/ HTTP/1.1" 500 134147
+INFO 2024-07-24 17:01:10,555 autoreload 87700 139900276102976 /home/gojiil/dev/python/gb/django/django_lessons/myproject/myproject/settings.py changed, reloading.
+INFO 2024-07-24 17:01:10,754 autoreload 87934 139921076021056 Watching for file changes with StatReloader
+INFO 2024-07-24 17:01:14,127 basehttp 87934 139920792356544 "GET /lesson4/client/add/ HTTP/1.1" 200 817
+INFO 2024-07-24 17:07:07,019 basehttp 87934 139920792356544 "GET /lesson4/client/add/ HTTP/1.1" 200 1021
+INFO 2024-07-24 17:07:55,452 basehttp 87934 139920792356544 "POST /lesson4/client/add/ HTTP/1.1" 200 1097
+INFO 2024-07-24 17:13:41,319 basehttp 87934 139920792356544 "POST /lesson4/client/add/ HTTP/1.1" 200 1122
+WARNING 2024-07-24 17:13:41,379 log 87934 139920792356544 Not Found: /favicon.ico
+INFO 2024-07-24 17:16:42,373 autoreload 87934 139921076021056 /home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson4/forms.py changed, reloading.
+INFO 2024-07-24 17:16:42,583 autoreload 89433 139658717968192 Watching for file changes with StatReloader
+ERROR 2024-07-24 17:16:47,154 log 89433 139658434447040 Internal Server Error: /lesson4/client/add/
+Traceback (most recent call last):
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson4/views.py", line 17, in client_form
+    address = form.cleaned_data['address']
+              ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'address'
+ERROR 2024-07-24 17:16:47,155 basehttp 89433 139658434447040 "POST /lesson4/client/add/ HTTP/1.1" 500 73445
+INFO 2024-07-24 17:19:43,338 autoreload 89433 139658717968192 /home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson4/forms.py changed, reloading.
+INFO 2024-07-24 17:19:43,533 autoreload 89641 139681757353792 Watching for file changes with StatReloader
+INFO 2024-07-24 17:19:50,294 basehttp 89641 139681394067136 "POST /lesson4/client/add/ HTTP/1.1" 200 1167
+INFO 2024-07-24 17:20:10,873 autoreload 89641 139681757353792 /home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson4/forms.py changed, reloading.
+INFO 2024-07-24 17:20:11,063 autoreload 89803 139852710848320 Watching for file changes with StatReloader
+INFO 2024-07-24 17:20:14,522 basehttp 89803 139852427298496 "POST /lesson4/client/add/ HTTP/1.1" 200 1170
+INFO 2024-07-24 17:20:15,496 basehttp 89803 139852427298496 "POST /lesson4/client/add/ HTTP/1.1" 200 1170
+INFO 2024-07-24 17:20:43,203 basehttp 89803 139852427298496 "GET /lesson4/item/add/ HTTP/1.1" 200 1102
+INFO 2024-07-24 17:29:20,874 autoreload 89803 139852710848320 /home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson4/views.py changed, reloading.
+INFO 2024-07-24 17:29:21,074 autoreload 90303 140549183219520 Watching for file changes with StatReloader
+INFO 2024-07-24 17:33:09,630 autoreload 91001 140117491111744 Watching for file changes with StatReloader
+INFO 2024-07-24 17:33:21,810 autoreload 91001 140117491111744 /home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson4/views.py changed, reloading.
+INFO 2024-07-24 17:33:22,006 autoreload 91052 140223338551104 Watching for file changes with StatReloader
+INFO 2024-07-24 17:33:25,707 basehttp 91052 140223052777152 "GET /lesson4/item/add/ HTTP/1.1" 200 1077
+INFO 2024-07-24 17:33:40,277 autoreload 91052 140223338551104 /home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson3/urls.py changed, reloading.
+INFO 2024-07-24 17:33:40,454 autoreload 91116 140529937303360 Watching for file changes with StatReloader
+INFO 2024-07-24 17:33:44,567 autoreload 91116 140529937303360 /home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson3/urls.py changed, reloading.
+INFO 2024-07-24 17:33:44,748 autoreload 91145 139688367744832 Watching for file changes with StatReloader
+INFO 2024-07-24 17:34:12,790 autoreload 91333 140627020683072 Watching for file changes with StatReloader
+INFO 2024-07-24 17:34:16,765 basehttp 91333 140626735662784 "GET /lesson4/item/add/ HTTP/1.1" 200 1077
+INFO 2024-07-24 17:34:28,423 autoreload 91442 140573736523584 Watching for file changes with StatReloader
+INFO 2024-07-24 17:34:58,584 basehttp 91442 140573451224768 "POST /lesson4/item/add/ HTTP/1.1" 200 1135
+INFO 2024-07-24 17:36:34,664 basehttp 91442 140573451224768 "POST /lesson4/item/add/ HTTP/1.1" 200 1155
+INFO 2024-07-24 17:37:15,309 basehttp 91442 140573451224768 "GET /lesson4/client/add/ HTTP/1.1" 200 1092
+INFO 2024-07-24 17:40:48,820 autoreload 91442 140573736523584 /home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson4/forms.py changed, reloading.
+INFO 2024-07-24 17:40:49,023 autoreload 91945 139895748020032 Watching for file changes with StatReloader
+INFO 2024-07-24 17:41:18,704 basehttp 91945 139895462954688 "POST /lesson4/client/add/ HTTP/1.1" 200 1234
+INFO 2024-07-24 17:41:26,163 basehttp 91945 139895462954688 "POST /lesson4/client/add/ HTTP/1.1" 200 1162
+INFO 2024-07-24 17:51:14,637 basehttp 91945 139895462954688 "GET /lesson4/item/add/ HTTP/1.1" 200 1100
+INFO 2024-07-24 17:51:48,934 autoreload 91945 139895748020032 /home/gojiil/dev/python/gb/django/django_lessons/myproject/myproject/settings.py changed, reloading.
+INFO 2024-07-24 17:51:49,143 autoreload 92695 139764458739520 Watching for file changes with StatReloader
+INFO 2024-07-24 17:51:51,289 basehttp 92695 139764172850880 "GET /lesson4/item/add/ HTTP/1.1" 200 1300
+INFO 2024-07-24 17:52:35,078 basehttp 92695 139764172850880 "POST /lesson4/item/add/ HTTP/1.1" 200 1350
+INFO 2024-07-24 17:54:51,982 autoreload 92695 139764458739520 /home/gojiil/dev/python/gb/django/django_lessons/myproject/lesson4/forms.py changed, reloading.
+INFO 2024-07-24 17:54:52,189 autoreload 92997 140339786950464 Watching for file changes with StatReloader

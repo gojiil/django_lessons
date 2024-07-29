@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'lesson2',
     'lesson3',
     'lesson4',
+    'lesson5',
 ]
 
 MIDDLEWARE = [
@@ -109,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
 
@@ -177,6 +178,11 @@ LOGGING = {
             'propagate': True,
         },
         'lesson4': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'lesson5': {
             'handlers': ['console'],
             'level': 'DEBUG',
             'propagate': True,

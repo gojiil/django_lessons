@@ -22,6 +22,10 @@ class Item(models.Model):
 
     def __str__(self) -> str:
         return f'Item: {self.name} ({self.description})'
+    
+    @property
+    def total_quantity(self):
+        return sum(item.quantity for item in Item.objects.all())
 
 class Order(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
